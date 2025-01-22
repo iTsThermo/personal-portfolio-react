@@ -61,7 +61,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
                     <h3>Wide Range of Proficient Languages & Software Engineering knowledge</h3>
-                    <p></p>
+                    <p>As an aspiring software engineer, I'm continuosly gaining expertise in a number of languages. Allowing me to overcome any obstacle thrown my way.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (

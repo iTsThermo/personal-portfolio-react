@@ -37,7 +37,7 @@ const labelsThird = [
     "Networking",
     "CompTia A+",
     "Penetration Testing & Ethical Hacking",
-    "Risk Management Control"
+    "Information Risk Management"
 ];
 
 function Expertise() {

@@ -25,19 +25,19 @@ const labelsSecond = [
     "TypeScript",
     "Go",
     "SQL",
+    "PostgreSQL",
     "React Native",
     "Scrum / Agile"
 ];
 
 const labelsThird = [
     "Kali Linux",
-    "Social Engineering Toolkit",
     "Docker",
+    "ISACA Competition 2025",
     "Computer Security Overview",
-    "Networking",
-    "CompTia A+",
     "Penetration Testing & Ethical Hacking",
-    "Information Risk Management"
+    "Information Risk Management",
+    "Internet & Network Security"
 ];
 
 function Expertise() {
@@ -61,7 +61,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
                     <h3>Wide Range of Proficient Languages & Software Engineering knowledge</h3>
-                    <p>As an aspiring software engineer, learning and mastering new languages is a must to stay versitile in the competitive market. This allows me to overcome any obstacle thrown my way.</p>
+                    <p>As an aspiring software engineer, learning and mastering new languages is a must to stay versatile in the competitive market. This allows me to overcome any obstacle thrown my way.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -72,7 +72,7 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faLinux} size="3x"/>
-                    <h3>Cyber Security Profiencies</h3>
+                    <h3>Cyber Security Proficiencies</h3>
                     <p>Secure systems from adversaries, and eliminate vulnerabilities</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>

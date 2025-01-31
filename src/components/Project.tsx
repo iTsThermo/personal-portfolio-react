@@ -23,9 +23,9 @@ function Project() {
                     <p>I'm building a Java-based operating system simulator that replicates core OS functionalities within the JVM. It features cooperative multitasking, priority scheduling that dynamically adjusts process execution, and paging with virtual memory management for efficient resource allocation. The system also includes interprocess communication through message passing and signaling, allowing processes to coordinate at the OS level.</p>
                 </div>
                 <div className="project">
-                    <a href="https://testflight.apple.com/join/qdnmsmE9" target="_blank" rel="noreferrer"><img src={elby} className="zoom" alt="thumbnail" width="100%" style={{ objectFit: "fill" }} /></a>
-                    <a href="https://testflight.apple.com/join/qdnmsmE9" target="_blank" rel="noreferrer"><h2>Elby</h2></a>
-                    <p>Automated record-keeping mobile app for short-term rental owners using React Native and Supabase, featuring mileage tracking, expense logging, IRS-compliant reporting, real-time geofencing, and automated visit tracking to enhance accuracy and efficiency. [Beta Avaliable]</p>
+                    <a href="https://apps.apple.com/us/app/elby/id6740222857" target="_blank" rel="noreferrer"><img src={elby} className="zoom" alt="thumbnail" width="100%" style={{ objectFit: "fill" }} /></a>
+                    <a href="https://apps.apple.com/us/app/elby/id6740222857" target="_blank" rel="noreferrer"><h2>Elby</h2></a>
+                    <p>Automated record-keeping mobile app for short-term rental owners using React Native and Supabase, featuring mileage tracking, expense logging, IRS-compliant reporting, real-time geofencing, and automated visit tracking to enhance accuracy and efficiency. [Available On App Store]</p>
                 </div>
                 <div className="project">
                     <a href="https://www.theodinproject.com/paths/full-stack-javascript" target="_blank" rel="noreferrer"><img src={odin} className="zoom" alt="thumbnail" width="100%" style={{ objectFit: "fill" }} /></a>

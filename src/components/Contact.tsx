@@ -11,6 +11,7 @@ function Contact() {
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('');
+  const [response, setResponse] = useState<string>('');
 
   const [nameError, setNameError] = useState<boolean>(false);
   const [emailError, setEmailError] = useState<boolean>(false);
@@ -25,15 +26,12 @@ function Contact() {
     setEmailError(email === '');
     setMessageError(message === '');
 
-    /* Uncomment below if you want to enable the emailJS */
+    //  Non - sensitive: Public Keys
+    const publicKey = "U9SdUxmAhEWbZ6v_C"
+    const templateKey = "template_y874n8c"
+    const serviceKey = "service_isqypr8"
 
-    const apiKey = process.env.REACT_APP_EMAIL_JS_API;
-    const templateKey = process.env.REACT_APP_TEMPLATE_ID;
-    const serviceKey = process.env.REACT_APP_SERVICE_ID;
-
-    console.log(apiKey, templateKey, serviceKey)
-
-    if (serviceKey === undefined || templateKey === undefined || apiKey === undefined) {
+    if (serviceKey === undefined || templateKey === undefined || publicKey === undefined) {
       console.log("Undefined service, template or API key for EmailJS")
       return;
     }
@@ -45,13 +43,14 @@ function Contact() {
         message: message
       };
 
-      console.log(templateParams);
-      emailjs.send(serviceKey, templateKey, templateParams, apiKey).then(
+      emailjs.send(serviceKey, templateKey, templateParams, publicKey).then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
+          setResponse("Thank you! I will get back to you shortly.")
         },
         (error) => {
           console.log('FAILED...', error);
+          setResponse("Something went wrong. E-mail me directly using vansh.kanojia@pace.edu.")
         },
       );
       setName('');
@@ -66,6 +65,7 @@ function Contact() {
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
           <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
+          {response ? <p>{response}</p> : <p></p>}
           <Box
             ref={form}
             component="form"

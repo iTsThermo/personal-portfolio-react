@@ -26,6 +26,7 @@ const labelsSecond = [
     "Go",
     "SQL",
     "PostgreSQL",
+    "Flask",
     "React Native",
     "Scrum / Agile"
 ];
@@ -37,7 +38,9 @@ const labelsThird = [
     "Computer Security Overview",
     "Penetration Testing & Ethical Hacking",
     "Information Risk Management",
-    "Internet & Network Security"
+    "Internet & Network Security",
+    "WebGoat",
+    "SQL Injection"
 ];
 
 function Expertise() {
